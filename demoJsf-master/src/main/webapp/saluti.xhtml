@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view contentType="text/html">
+	<h:head />
+
+	<h:body>
+		<h:form>
+			<p:panel id="panel1" header="DemoJsf">
+				<h:outputText value="#{helloController.hello}" />
+				<br />
+				<br />
+				<h:outputText value="Orario: " />
+				<h:outputText value="#{helloController.timeStamp}" />
+				<br />
+				<br />
+				<h:outputText value="Prova! " />
+				<br />
+				<br />
+				<p:commandButton update="panel1"
+					action="#{helloController.updateOrario}" value="Aggiorna orario" />
+				<br />
+			</p:panel>
+		</h:form>
+	</h:body>
+</f:view>
+</html>
