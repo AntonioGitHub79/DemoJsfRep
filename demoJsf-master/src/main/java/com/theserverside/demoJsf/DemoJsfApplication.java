@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 public class DemoJsfApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
+    	System.out.println("ciao");
         SpringApplication.run(DemoJsfApplication.class, args);
         //prova
     }
